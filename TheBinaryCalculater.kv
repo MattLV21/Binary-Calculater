@@ -1,0 +1,34 @@
+BinaryWidgets:
+
+<BinaryWidgets>
+    rows: 3
+    canvas.before:
+        Color:
+            rgba: 0.9, 0.9, 0.9, 1
+        Rectangle:
+            # self here refers to the widget i.e FloatLayout
+            pos: self.pos
+            size: self.size
+    Label:
+        font_size: "50dp"
+        text: root.answer
+        color: 0,0,0,1
+    Spinner:
+        id: binary_calculation
+        size_hint: 1, None
+        size: 0, "80dp"
+        font_size: "50dp"
+        text: "Too Binary"
+        color: 0, 0, 0, 1
+        background_color: 1,1,1,0.5
+        values: ["Too Binary", "From Binary","Too twos complement", "From twos comlement", "Flydende Decimalpoint","Decimalpoint Binary","Binary Plus","Binary Minus", "From S Too Base 10", "From Base 10 Too S"]
+    TextInput:
+        id: binary_code
+        font_size: "50dp"
+        text: "binary code here!"
+        color: 0,0,0,1
+        valign: "middle"
+        halign: "center"
+        multiline: False
+        on_text_validate: root.ask_question(self)
+        background_color: 0,0,0,0
