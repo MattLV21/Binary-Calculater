@@ -211,13 +211,3 @@ def decimalpoint_binary(decimalpoint: str) -> str:
     else:
         return "0"+eks+mantese
 
-
-
-
-#print(from_base_10_binaer(2, 1010010111110001))
-#print(from_base_10_binaer(16, 42481))
-#print(to_base_10_binaer(2, 1010010111110001))
-#print(to_base_10_binaer(2, 11001))
-#print(flydende_decimalpunkt("00100110", 3))
-#print(binaer_plus(2, 10101111, 1))
-#print(binaer_minus(2, 11001, 10000000))
